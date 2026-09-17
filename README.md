@@ -4,9 +4,10 @@ Proyek ini adalah sistem manajemen data informasi produk berbasis web sederhana 
 
 ---
 
-# Struktur & Fungsi Setiap Berkas
+## 📁 Struktur & Fungsi Setiap Berkas
 
 | Nama Berkas | Lapisan (Layer) | Fungsi Utama |
+|---|---|---|
 | `products.php` | **Data Layer** | Menyimpan kumpulan data produk dalam bentuk *Multidimensional Array*. |
 | `functions.php` | **Processing Layer** | Berisi fungsi-fungsi pengolah data (hitung total aset & logika warna baris). |
 | `index.php` | **Presentation Layer** | Merajut berkas data & fungsi via `require_once` dan merender tabel di browser. |
@@ -14,7 +15,7 @@ Proyek ini adalah sistem manajemen data informasi produk berbasis web sederhana 
 
 ---
 
-# Penjelasan Logika & Alur Sistem (Data Flow)
+## 🧠 Penjelasan Logika & Alur Sistem (Data Flow)
 
 Sistem ini bekerja dengan alur logis dari **Data Layer ➔ Processing Layer ➔ Presentation Layer**:
 
@@ -26,9 +27,9 @@ Sistem ini bekerja dengan alur logis dari **Data Layer ➔ Processing Layer ➔ 
 
 ---
 
-# Bedah Kode & Penjelasan Fungsi
+## 💻 Bedah Kode & Penjelasan Fungsi
 
-# 1. File `products.php` (Data Layer)
+### 1. File `products.php` (Data Layer)
 
 ```php
 <?php
@@ -188,19 +189,19 @@ $totalNilaiAset = hitungTotalNilaiStok($products);
 
 ---
 
-# Cara Mengoperasikan & Melihat Tampilan
+## 🚀 Cara Mengoperasikan & Melihat Tampilan
 
-# Cara 1: Membuka Berkas HTML (Paling Mudah)
+### Cara 1: Membuka Berkas HTML (Paling Mudah)
 1. Buka File Explorer di komputer Anda.
-2. Masuk ke folder proyek: `C:\Users\Azkia Akbar Pratama\.gemini\antigravity\scratch\product-info-system\`
+2. Masuk ke folder proyek: `C:\Users\Azkia Akbar Pratama\Documents\product-info-system\`
 3. **Klik dua kali (double click)** pada berkas `index.html`.
 4. Berkas akan langsung terbuka di browser favorit Anda.
 
-# Cara 2: Menjalankan dengan Server PHP (Server-Side)
+### Cara 2: Menjalankan dengan Server PHP (Server-Side)
 1. Buka **Command Prompt (CMD)** atau **PowerShell**.
 2. Masuk ke direktori proyek:
    ```cmd
-   cd "C:\Users\Azkia Akbar Pratama\.gemini\antigravity\scratch\product-info-system"
+   cd "C:\Users\Azkia Akbar Pratama\Documents\product-info-system"
    ```
 3. Jalankan server bawaan PHP:
    ```cmd
@@ -208,7 +209,7 @@ $totalNilaiAset = hitungTotalNilaiStok($products);
    ```
 4. Buka browser dan ketik alamat: **`http://localhost:8000`**
 
-# Cara 3: Menjalankan Menggunakan XAMPP
+### Cara 3: Menjalankan Menggunakan XAMPP
 1. Salin seluruh folder `product-info-system` ke dalam direktori `C:\xampp\htdocs\`.
 2. Jalankan modul **Apache** pada XAMPP Control Panel.
 3. Buka browser dan akses alamat: **`http://localhost/product-info-system`**
