@@ -15,7 +15,7 @@ Proyek ini adalah sistem manajemen data informasi produk berbasis web sederhana 
 
 ---
 
-## 🧠 Penjelasan Logika & Alur Sistem (Data Flow)
+##  Penjelasan Logika & Alur Sistem (Data Flow)
 
 Sistem ini bekerja dengan alur logis dari **Data Layer ➔ Processing Layer ➔ Presentation Layer**:
 
